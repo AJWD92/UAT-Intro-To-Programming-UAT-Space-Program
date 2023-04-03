@@ -1,6 +1,6 @@
-# Ignore a min.index.html file located in the root folder
+# Ignore a index.min.html file located in the root folder
 index.min.html
 
-# Ignore min.cssReset.css & min.styles.css located in a folder called styling
+# Ignore cssReset.min.css & styles.min.css located in a folder called styling
 styling/cssReset.min.css
-styling/min.styles.css
+styling/styles.min.css
