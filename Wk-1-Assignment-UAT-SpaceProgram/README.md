@@ -1,4 +1,4 @@
-# UAT Intro To Programming 
+# UAT Intro To Programming
 
 ## UAT Space Program
 
