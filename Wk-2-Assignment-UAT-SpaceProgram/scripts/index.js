@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             stopButton.disabled = false;
 
             // Wait until countdown reaches 0 or stop button is clicked
-        } while (currTime > 0 && !stopButton.disabled);
+        } while (currTime > 10);
     });
 
     const stopButton = document.getElementById('stop-btn');
