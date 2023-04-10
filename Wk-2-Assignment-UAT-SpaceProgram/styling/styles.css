@@ -1,0 +1,70 @@
+/* Setting background image for the page */
+
+body {
+background-image: url('../assets/img/astronaut.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 100vw;
+max-height: 100vh;
+}
+
+/* Styling for the main heading */
+h1{
+font: 3.2rem Audiowide, serif;
+margin: 2% 1%;
+color: hsl(351, 57%, 50%);
+}
+
+/* Styling for paragraphs */
+p {
+font: 1.8rem Lexend, serif;
+margin: 2% 1% ;
+color: hsl(192, 39%, 83%);
+}
+
+/* Styling for buttons */
+button {
+background-color: hsl(0, 0%, 100%);
+color: hsl(0, 0%, 0%);
+border: solid 1px hsl(255, 255, 255);
+border-radius: 5% 25%;
+padding: 1rem 2.4rem;
+text-align: center;
+transition: .8s all ease-in-out;
+}
+
+/* Styling for button hover and focus state with animation */
+button:hover,
+button:focus {
+animation: pulse 1.8s ease-out;
+background: hsl(351, 57%, 50%);
+color: hsl(192, 39%, 83%);
+}
+
+/* Keyframe animation for button pulse effect */
+@keyframes pulse {
+0% {
+transform: scale(1.2);
+box-shadow: -3px 2px 8px 6px hsla(201, 57%, 50%, .9);
+}
+70% {
+box-shadow: -3px 2px 8px 6px hsla(201, 57%, 50%, .3);
+}
+100% {
+transform: scale(1);
+box-shadow: -3px 2px 8px 6px hsla(201, 57%, 50%, .9);
+}
+}
+
+/* Styling for a specific button with id "start-btn" */
+#start-btn {
+margin: .5% .25% .5% 1% ;
+}
+
+/* Styling for images */
+img {
+margin: 1%;
+width: 240px;
+height: 240px;
+}

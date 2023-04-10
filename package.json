@@ -1,0 +1,19 @@
+{
+  "name": "uat-assignment-uat-space-program",
+  "version": "1.0.0",
+  "description": "A repo to turn in my UAT Introduction to programming assignments over the course of 5 weeks",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJWD92/UAT-Intro-To-Programming-UAT-Space-Program.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AJWD92/UAT-Intro-To-Programming-UAT-Space-Program/issues"
+  },
+  "homepage": "https://github.com/AJWD92/UAT-Intro-To-Programming-UAT-Space-Program#readme"
+}
