@@ -9,7 +9,7 @@ const checkCreds = () => {
     console.log(lastName);
     console.log(idNum)
     
-    if (fullName.length >= 20 || idNum >=1000) {
+    if (fullName.length < 20 || idNum > 1000) {
     document.getElementById('loginStatus').innerHTML = 'Invalid input';
     } else {
     const message = `Full name: ${fullName}\nID#: ${idNum}\nCongrats - you are now logged in - hit enter to go to the next page.`
