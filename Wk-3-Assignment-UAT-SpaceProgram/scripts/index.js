@@ -60,10 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Clear the countdown interval
             clearInterval(countdownIntervalId);
-        } else {
-            // Decrement the count by 1
-            currTime--;
+        } 
+        // If the countdown is less than 5 seconds, displays a warring message
+        else if (currTime < 6) {
+            const warringMessage = `Warning Less then 1/2 way to launch, time left = ${currTime}`
+            display.textContent = warringMessage
         }
+         // Decrement the count by 1
+         currTime--;
     };
 
     // Function to stop the countdown and reset the count variable and button states
