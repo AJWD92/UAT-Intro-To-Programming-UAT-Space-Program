@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My version of the UAT Space Program intro to programming week 1 assignment " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adds the UAT Space Program logo to the title bar. -->
+    <link rel="icon" type="image/png" href="./assets/img/UATSpace-1.png" />
+
+    <!-- imports a css reset that was referenced from Eric Meyer's source citing is contained in actual css  file. -->
+    <link rel="stylesheet" href="./styling/cssReset.css" />
+
+    <!-- imports the main css styling for this web page contained in the styling folder -->
+    <link rel="stylesheet" type="text/css" href="./styling/styles.css" />
+
+    <!-- import group that imports fonts from the google fonts api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&effect=font-effect-3d-float&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap" rel="stylesheet">
+
+    <!-- imports the JavaScript logic from the scripts folder to add function to the webpage -->
+    <script src="./scripts/index.js"></script> 
+
+    <title>UAT Space Program Login</title>
+</head>
+<body>
+    <h1>UAT Space Program</h1>
+    <br/>
+    <section id="loginForm">
+        <h2>Mission Control Login</h2>
+        <p id="loginStatus"></p>
+        <form id="credSubmit" onsubmit="return false">
+            <section class="inputBox">
+                <input type="text" id="firstName" name="firstName" required="required" />
+                <label for="firstName" class="formText">First Name:</label>
+                <i></i>
+            </section>
+            <section class="inputBox">
+                <input type="text" id="lastName" name="lastName" required="required" />
+                <label for="lastName" class="formText">Last Name:</label>
+                <i></i>
+            </section>
+            <section class="inputBox">
+                <input type="number" id="idNum" name="idNum" required="required" />
+                <label for="idNum" class="formText">ID#: </label>
+                <i></i>
+            </section>
+            <input class="submit-btn" type="submit" onclick="checkCreds()" />
+        </form>
+    </section>
+</body>
+</html>
