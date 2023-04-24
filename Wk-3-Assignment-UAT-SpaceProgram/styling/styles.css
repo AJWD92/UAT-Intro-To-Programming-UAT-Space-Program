@@ -184,6 +184,11 @@ box-shadow: -3px 2px 8px 6px hsla(201, 57%, 50%, .9);
 margin: .5% .25% .5% 1% ;
 }
 
+button:disabled,
+button[disabled] {
+    background-color: rgb(105, 105, 105);
+}
+
 /* Styling for images */
 img {
 margin: 1%;

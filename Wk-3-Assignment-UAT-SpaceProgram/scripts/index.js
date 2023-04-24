@@ -61,6 +61,17 @@ document.addEventListener('DOMContentLoaded', () => {
             // Clear the countdown interval
             clearInterval(countdownIntervalId);
         } else {
+
+            const stopButton = document.getElementById('stop-btn');
+
+            // Disable the stop button
+            stopButton.disabled = true;
+
+            const startButton = document.getElementById('start-btn');
+
+            // Enable the start button
+            startButton.disabled = false;
+
             // Decrement the count by 1
             currTime--;
         }
