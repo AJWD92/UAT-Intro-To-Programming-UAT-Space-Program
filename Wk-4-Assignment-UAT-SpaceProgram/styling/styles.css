@@ -153,7 +153,6 @@ background: hsl(351, 57%, 50%);
 color: hsl(192, 40%, 83%);
 }
 
-
 /* Keyframe animation for button pulse effect */
 @keyframes pulse {
 0% {
@@ -182,6 +181,11 @@ box-shadow: -3px 2px 8px 6px hsla(201, 57%, 50%, .9);
 /* Styling for a specific button with id "start-btn" */
 #start-btn {
 margin: .5% .25% .5% 1% ;
+}
+
+button:disabled,
+button[disabled] {
+    background-color: hsl(0, 0%, 41%);
 }
 
 /* Styling for images */

@@ -186,7 +186,7 @@ margin: .5% .25% .5% 1% ;
 
 button:disabled,
 button[disabled] {
-    background-color: rgb(105, 105, 105);
+    background-color: hsl(0, 0%, 41%);
 }
 
 /* Styling for images */

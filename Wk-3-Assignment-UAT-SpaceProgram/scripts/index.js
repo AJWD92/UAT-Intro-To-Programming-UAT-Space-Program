@@ -65,12 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const stopButton = document.getElementById('stop-btn');
 
             // Disable the stop button
-            stopButton.disabled = true;
+            stopButton.disabled = false;
 
             const startButton = document.getElementById('start-btn');
 
             // Enable the start button
-            startButton.disabled = false;
+            startButton.disabled = true;
 
             // Decrement the count by 1
             currTime--;

@@ -45,6 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the countdown interval ID variable
     let countdownIntervalId;
 
+    const playSound = () => {
+        let blastOff = new Audio('../assets/sound/mixkit-rocket-ignition-flames-1725.wav');
+        blastOff.play();
+    }
+
     // Function to update the countdown display
     const startCountdown = () => {
         const display = document.getElementById('countdown-display');
@@ -58,9 +63,23 @@ document.addEventListener('DOMContentLoaded', () => {
             // Update display text with rocket and collision emojis
             display.textContent = `Blastoff! ${String.fromCodePoint(utfRocketCode)} ${String.fromCodePoint(utfCollisionCode)}`;
 
+            playSound();
+
             // Clear the countdown interval
             clearInterval(countdownIntervalId);
+
         } else {
+
+            const stopButton = document.getElementById('stop-btn');
+
+            // Disable the stop button
+            stopButton.disabled = false;
+
+            const startButton = document.getElementById('start-btn');
+
+            // Enable the start button
+            startButton.disabled = true;
+
             // Decrement the count by 1
             currTime--;
         }
